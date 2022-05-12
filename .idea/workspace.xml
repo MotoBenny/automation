@@ -4,6 +4,7 @@
     <list default="true" id="921813f3-07d5-41ea-baa3-21e11cc73517" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automation/automation.py" beforeDir="false" afterPath="$PROJECT_DIR$/automation/automation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation/phone_numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/automation/phone_numbers.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,7 @@
       <updated>1652379167109</updated>
       <workItem from="1652379170969" duration="14000" />
       <workItem from="1652379323718" duration="4938000" />
-      <workItem from="1652390300268" duration="5155000" />
+      <workItem from="1652390300268" duration="5695000" />
     </task>
     <servers />
   </component>
@@ -94,6 +95,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/automation$automation.coverage" NAME="automation Coverage Results" MODIFIED="1652395354971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automation" />
+    <SUITE FILE_PATH="coverage/automation$automation.coverage" NAME="automation Coverage Results" MODIFIED="1652395984070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/automation" />
   </component>
 </project>
