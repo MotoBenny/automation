@@ -1,22 +1,20 @@
 import re
-
+import os
 
 phone_reg = r'\b\d{3}\D?\d{3}\D?\d{4}'
 sub_reg = r"[.)]"
-#
-# email_reg
-#
-#
-# match_obj = re.match(phone_reg, POTENTIAL CONTACTS DOC)
+
 document = 'potential-contacts.txt'
 
 
-def validate_phone_nums(doc):
+def insert_tacs(phone_num):
+    completed_num = phone_num[:3] + '-' + phone_num[4:7] + "-" + phone_num[7:]
+    return completed_num
 
+
+def validate_phone_nums(doc):
     num_matches = []
     with open(doc) as f:
-        # lines = f.readlines()
-        # print(lines)
         for line in f:
             num_matches += re.findall(phone_reg, line)
 
@@ -25,14 +23,19 @@ def validate_phone_nums(doc):
         num = re.sub(sub_reg,"-",num)
         nums_formatted.append(num)
 
-    for num in num_matches:
-        for char in num:
-            char.replace(".","-")
-            char.replace(")", "-")
-        if num[3] is not "-":
-            num[3].insert('-')
+    completed_nums = []
+    for phone_num in nums_formatted:
+        if phone_num[3] != '-':
+            taced_num = insert_tacs(phone_num)
+            completed_nums.append(taced_num)
+        else:
+            completed_nums.append(phone_num)
 
-    return print(nums_formatted)
+    completed_nums = list(dict.fromkeys(completed_nums))
+    return completed_nums
 
-
-validate_phone_nums(document)
+completed_list = validate_phone_nums(document)
+print(os.getcwd())
+with open('phone_numbers.txt', 'w') as phone_doc:
+    for item in completed_list:
+        phone_doc.write("%s\n" % item)
