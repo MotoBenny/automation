@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="921813f3-07d5-41ea-baa3-21e11cc73517" name="Changes" comment="" />
+    <list default="true" id="921813f3-07d5-41ea-baa3-21e11cc73517" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/existing-contacts.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/potential-contacts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation/automation.py" beforeDir="false" afterPath="$PROJECT_DIR$/automation/automation.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,10 +40,22 @@
       <option name="presentableId" value="Default" />
       <updated>1652379167109</updated>
       <workItem from="1652379170969" duration="14000" />
+      <workItem from="1652379323718" duration="302000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
