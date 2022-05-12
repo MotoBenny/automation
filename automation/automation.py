@@ -2,7 +2,7 @@ import re
 
 phone_reg = r'\b\d{3}\D?\d{3}\D?\d{4}'
 sub_reg = r"[.)]"
-
+email_reg = r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}"
 document = 'potential-contacts.txt'
 
 
@@ -40,4 +40,21 @@ completed_list = validate_phone_nums(document)
 with open('phone_numbers.txt', 'w') as file:
     for number in completed_list:
         file.write(number)
+        file.write('\n')
+
+
+def validate_emails(doc):
+    email_matches = []
+    with open(doc) as f:
+        for line in f:
+            email_matches += re.findall(email_reg, line)
+
+    return email_matches
+
+
+completed_email = validate_emails(document)
+
+with open('emails.txt', "w") as file:
+    for email in completed_email:
+        file.write(email)
         file.write('\n')
